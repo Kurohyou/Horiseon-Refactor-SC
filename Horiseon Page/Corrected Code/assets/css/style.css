@@ -8,14 +8,14 @@ body {
     background-color: #d9dcd6;
     scroll-padding-top: 100px;
 }
-
+/*Converted all .header declarations to affect the header element instead*/
 header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: #ffffff;
 }
-
+/*There should only be a single h1 on a page, so removed specifying that we were affecting the h1 in the header*/
 h1 {
     display: inline-block;
     font-size: 48px;
@@ -24,7 +24,7 @@ h1 {
 h1 .seo {
     color: #d9dcd6;
 }
-
+/*Converted these declarations to affect the nav element and its contents*/
 header nav {
     padding-top: 15px;
     margin-right: 20px;
@@ -70,127 +70,62 @@ p {
     margin-left: 25px;
 }
 
-.content {
+
+/*changed the .content declaration to target the main element instead as these are the same thing*/
+main {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
 
-.benefits {
+/*Replaced the section specific class stylings with a generic main section style as they were all the same*/
+main section{
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+/* Replaced the section specific styling of the img tags with a generic styling for the same reason as above*/
+main img{
+    max-height: 200px;
+}
+/* And same replacement here as the main img, and main section*/
+main h2{
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+/*Changed .benefits to be aside*/
+aside{
     margin-right: 20px;
     padding: 20px;
     clear: both;
-    float: right;
     width: 20%;
     height: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
 }
-
-.benefit-lead {
+/*Moved the benefit section specific styling to aside section instead of repeating it*/
+aside section{
     margin-bottom: 32px;
     color: #ffffff;
 }
 
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-lead h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-lead img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.search-engine-optimization {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.search-engine-optimization img {
-    max-height: 200px;
-}
-
-.online-reputation-management img {
-    max-height: 200px;
-}
-
-.social-media-marketing img {
-    max-height: 200px;
-}
-
-.search-engine-optimization h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
+/*Shrank the font-size of the headers in the aside so that they look like h3's*/
 aside h2{
     font-size:1.17em;
+    margin-bottom: 10px;
+    text-align: center;
 }
+/*Also consolidated the benefit image styling into a single declaration*/
+aside img{
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+/*Converted the .footer declarations to target the footer element instead*/
 footer {
     padding: 30px;
     clear: both;

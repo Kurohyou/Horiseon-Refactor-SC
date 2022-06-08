@@ -22,6 +22,6 @@ WHEN I view the title element
 THEN I find a concise, descriptive title X
 ```
 ## Usage
-To access the completed site, visit the [github pages version of this repository](kurohyou.github.io/UOFU-02-Challenge). The code for the site can be found in the [Horiseon Page folder]().
+To access the completed site, visit the [github pages version of this repository](kurohyou.github.io/UOFU-02-Challenge). The code for the site can be found in the [Horiseon Page folder]("/Horiseon Page") with the corrected code in the [Corrected Code folder]("/Horiseon Page/Corrected Code").
 ## Credits
 The base code is from the University of Utah Full Stack Bootcamp.
