@@ -1,6 +1,7 @@
 # Horiseon Solution Services Accessibility Corrections
 ## Description
-The goal of this challenge was to refactor code for an existing site to add accessibility and semantic HTML features.
+The goal of this challenge was to refactor code for an existing site to add accessibility and semantic HTML features. The refactored sheet code looks the same as the non-accessible version.
+![Sheet Screenshot](assets/images/screencap.png)
 ### User Story from the assignment
 ```
 AS A marketing agency
